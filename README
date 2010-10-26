@@ -1,0 +1,14 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3298
+
+This is the vimfaq from http://vimdoc.sf.net (with slight changes added by myself).
+
+This Vim FAQ is created from the questions and answers posted to the
+vim@vim.org user mailing list and the comp.editors newsgroup. There are
+several ways to solve a problem in Vim. This FAQ gives one of those several
+possibilities. You can explore the other ways using the information and
+links given in this FAQ. The credit for the answers in this FAQ goes to
+Peppe, Benji, Charles Campbell and numerous others.
+
+This is only a documentation plugin. 
+
+The source can be found at github: http://github.com/chrisbra/vim_faq
