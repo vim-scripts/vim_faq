@@ -1,6 +1,6 @@
 *vim_faq.txt*	Frequently Asked Questions
 
-Last updated on: 20 Juni 2011
+Last updated on: 18 Juli 2011
 
 	  VIM FAQ by: Christian Brabandt <cb@256bit.org>
 
@@ -596,6 +596,8 @@ SECTION 29 - FOLDING
 |faq-29.5|  How do I change the text displayed for a closed fold?
 |faq-29.6|  How do I store and restore manually created folds across
 	  different Vim invocations?
+|faq-29.7|  I have enabled syntax based folding. Why is Vim so slow?
+
                                         *faq-vim-with-external-applications*
 SECTION 30 - VIM WITH EXTERNAL APPLICATIONS
 |faq-30.1|  Can I run a shell inside a Vim window?
@@ -6898,6 +6900,24 @@ For more information, read
     |:mksession|
     |'sessionoptions'|
 
+ 								*faq-29.7*
+29.7. I have enabled syntax based folding. Why is Vim so slow?
+
+Syntax based folding is currently rather slow in Vim and will possibly
+slow down Vim considerably. There is an issue in the todo list to fix
+this, but the todo list is rather long and it may take a while until
+this will be fixed.
+
+You can find the issue in the todo list, if you read 
+
+    |todo.txt|
+
+followed by a search for "folding with 'foldmethod'"
+
+A workaround is to temporarily set the foldmethod to manual while in
+insert mode. This is described in the wiki at:
+http://vim.wikia.com/wiki/Keep_folds_closed_while_inserting_text
+
 =============================================================================
  								*faq-30*
 SECTION 30 - VIM WITH EXTERNAL APPLICATIONS
@@ -8304,7 +8324,8 @@ setting. For more information, read
     |xterm-copy-paste|
     |09.3|
 
-36.11 Why shouldn't I modify the files in the system runtime directory?
+ 								*faq-36.11*
+36.11. Why shouldn't I modify the files in the system runtime directory?
 
 Just be careful about modifying files under $VIMRUNTIME, which in
 is usually /usr/share/vim/vimXX (Unix) or C:\Program Files\vim\vimXX
